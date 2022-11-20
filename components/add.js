@@ -1,3 +1,6 @@
-console.log("dodawanie");
+const addNumber = (...numbers) => {
+  //   console.log(numbers);
+  console.log(numbers.reduce((sum, value) => sum + value));
+};
 
-module.exports = "tekst z add";
+module.exports = addNumber;
