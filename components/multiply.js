@@ -1,5 +1,10 @@
-const add = require("./add");
+const multiply = (...numbers) => {
+  return numbers.reduce((sum, value) => sum * value);
+};
 
+// module.exports.multiply = multiply;
+// module.exports.description = "Mnożenie to działanie matematyczne...";
 module.exports = {
-  value: 1,
+  multiply,
+  description: "Mnożenie to działanie matematyczne...",
 };

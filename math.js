@@ -2,6 +2,13 @@
 // console.log(module.exports);
 
 const add = require("./components/add");
-const multiply = require("./components/multiply");
+const { multiply, description } = require("./components/multiply");
+// const multiply = require("./components/multiply");
 
-add(2, 43, 4);
+const addResult = add(2, 43, 4);
+console.log(addResult);
+
+// const multiplyResult = multiply.multiply(2, 2, 5);
+const multiplyResult = multiply(2, 2, 5);
+console.log(multiplyResult);
+console.log(description);
